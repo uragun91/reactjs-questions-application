@@ -17,6 +17,7 @@ export const Question = ({
 }) => {
   return (
     <div
+      data-testid="question"
       className={`question ${active ? 'active' : ''} ${
         disabled ? 'disabled' : ''
       } ${className ?? ''}`}
