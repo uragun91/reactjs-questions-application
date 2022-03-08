@@ -1,0 +1,23 @@
+.question {
+  padding: 10px 15px;
+  background-color: transparent;
+  transition: background-color 0.1s linear;
+
+  &:hover:not(.disabled) {
+    background-color: rgba(#777, 0.1);
+  }
+
+  &__description {
+    margin-bottom: 5px;
+  }
+
+  &.disabled > &__description {
+    opacity: 0.65;
+    color: #777;
+  }
+
+  &.active,
+  &.active:hover:not(.disabled) {
+    background-color: var(--highlight-color);
+  }
+}

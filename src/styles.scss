@@ -1,0 +1,48 @@
+.app {
+  font-family: sans-serif;
+  width: 400px;
+  margin: 0 auto;
+
+  --primary-color: #1e4c5d;
+  --highlight-color: #def7f7;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__questions-list {
+    margin-bottom: 5px;
+  }
+
+  &__fetching {
+    align-self: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__submit-error {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    color: red;
+
+    &.visible {
+      visibility: visible;
+    }
+    &.hidden {
+      visibility: hidden;
+    }
+  }
+
+  &__success {
+    margin-top: 40px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      color: green;
+    }
+  }
+}

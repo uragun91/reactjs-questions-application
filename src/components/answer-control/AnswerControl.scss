@@ -1,0 +1,16 @@
+.answer-control {
+  .btn {
+    width: 60px;
+  }
+
+  .btn:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .btn:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
+}
