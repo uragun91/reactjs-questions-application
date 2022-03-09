@@ -12,10 +12,11 @@ it('should show loading when rendered', () => {
   cleanup();
 });
 
-it('should render questions when successfully loaded', async () => {
-  render(<App />);
+it('should render questions when successfully loaded and button state is disabled', async () => {
+  const { container } = render(<App />);
 
   const questionNodes = await screen.findAllByTestId('question');
 
   expect(questionNodes.length).toEqual(2);
+  expect(screen.getByText(/Submit/).closest('button')).toBeDisabled();
 });
