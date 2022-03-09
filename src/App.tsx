@@ -38,7 +38,11 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    let mounted = true;
     getData();
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   const handleAnswer = useCallback(
