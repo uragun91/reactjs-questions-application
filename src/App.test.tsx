@@ -13,7 +13,7 @@ it('should show loading when rendered', () => {
 });
 
 it('should render questions when successfully loaded and button state is disabled', async () => {
-  const { container } = render(<App />);
+  render(<App />);
 
   const questionNodes = await screen.findAllByTestId('question');
 
