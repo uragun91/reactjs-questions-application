@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import { waitFor } from '@testing-library/dom';
 import React from 'react';
 
 import '@testing-library/jest-dom';
+
 import { IQuestion } from '../../models/question.interface';
 import { QuestionsList } from './QuestionsList';
 
